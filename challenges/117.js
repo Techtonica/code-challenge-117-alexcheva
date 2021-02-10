@@ -17,8 +17,12 @@
 
 function intersection(a, b){
   return(
-    // replace this line with your code
+    a.filter(x => b.includes(x))
   );
 }
-
+let a = ['A', 'B', 'Z']
+let b = ['Z', 'X', 'Y']
+//
+console.log(intersection(a, b));
+// _// => ['Z']_`
 module.exports = intersection;
